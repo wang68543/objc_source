@@ -1493,7 +1493,11 @@ static void methodizeClass(Class cls, Class previously)
     auto rw = cls->data();
     auto ro = rw->ro();
     auto rwe = rw->ext();
-
+    const char *mangledName = cls->nonlazyMangledName();
+    const char *personName = "LGPerson";
+    if (strcmp(mangledName, personName) == 0  && !isMeta) {
+        printf("%s  --KC-- %s\n",__func__, mangledName);
+    }
     // Methodizing for the first time
     if (PrintConnecting) {
         _objc_inform("CLASS: methodizing class '%s' %s", 
@@ -2587,6 +2591,11 @@ static Class realizeClassWithoutSwift(Class cls, Class previously)
 
     auto ro = (const class_ro_t *)cls->data();
     auto isMeta = ro->flags & RO_META;
+    const char *mangledName = cls->nonlazyMangledName();
+    const char *personName = "LGPerson";
+    if (strcmp(mangledName, personName) == 0 ) {
+        printf("%s  --KC-- %s --%s\n",__func__, mangledName, isMeta ? "元类": "类");
+    }
     if (ro->flags & RO_FUTURE) {
         // This was a future class. rw data is already allocated.
         rw = cls->data();
@@ -2702,7 +2711,14 @@ static Class realizeClassWithoutSwift(Class cls, Class previously)
     } else {
         addRootClass(cls);
     }
-
+//    auto ro1 = (const class_ro_t *)cls->data();
+//    auto isMeta1 = ro->flags & RO_META;
+//    const char *mangledName1 = cls->nonlazyMangledName();
+//    const char *personName1 = "LGPerson";
+//    if (strcmp(mangledName1, personName1) == 0  && !isMeta1) {
+//        printf("%s  --KC-- %s\n",__func__, mangledName1);
+//    }
+   
     // Attach categories
     methodizeClass(cls, previously);
 
@@ -3304,7 +3320,10 @@ bool mustReadClasses(header_info *hi, bool hasDyldRoots)
 Class readClass(Class cls, bool headerIsBundle, bool headerIsPreoptimized)
 {
     const char *mangledName = cls->nonlazyMangledName();
-    
+    const char *personName = "LGPerson";
+    if (strcmp(mangledName, personName) == 0) {
+        printf("%s  --KC-- %s\n",__func__, mangledName);
+    }
     if (missingWeakSuperclass(cls)) {
         // No superclass (probably weak-linked). 
         // Disavow any knowledge of this subclass.
@@ -3612,8 +3631,17 @@ void _read_images(header_info **hList, uint32_t hCount, int totalClasses, int un
 
         for (i = 0; i < count; i++) {
             Class cls = (Class)classlist[i];
+            auto ro = (const class_ro_t *)cls->data();
+            
+            const char *mangledName = cls->nonlazyMangledName();
+            const char *personName = "LGPerson";
+            if (strcmp(mangledName, personName) == 0 ) {
+                printf("%s  --KC-- %s\n",__func__, mangledName);
+//                printf("---%s\n", *(ro->baseMethods));
+            }
+           
             Class newCls = readClass(cls, headerIsBundle, headerIsPreoptimized);
-
+            
             if (newCls != cls  &&  newCls) {
                 // Class was moved but not deleted. Currently this occurs 
                 // only when the new class resolved a future class.
@@ -3742,7 +3770,14 @@ void _read_images(header_info **hList, uint32_t hCount, int totalClasses, int un
         for (i = 0; i < count; i++) {
             Class cls = remapClass(classlist[i]);
             if (!cls) continue;
-
+            const char *mangledName = cls->nonlazyMangledName();
+            const char *personName = "LGPerson";
+          
+            auto ro = (const class_ro_t *)cls->data();
+            auto isMeta = ro->flags & RO_META;
+            if (strcmp(mangledName, personName) == 0 ) {
+                printf("%s  --KC-- %s\n",__func__, mangledName);
+            }
             addClassTableEntry(cls);
 
             if (cls->isSwiftStable()) {
@@ -3767,6 +3802,11 @@ void _read_images(header_info **hList, uint32_t hCount, int totalClasses, int un
             Class cls = resolvedFutureClasses[i];
             if (cls->isSwiftStable()) {
                 _objc_fatal("Swift class is not allowed to be future");
+            }
+            const char *mangledName = cls->nonlazyMangledName();
+            const char *personName = "LGPerson";
+            if (strcmp(mangledName, personName) == 0 ) {
+                printf("%s  --KC-- %s\n",__func__, mangledName);
             }
             realizeClassWithoutSwift(cls, nil);
             cls->setInstancesRequireRawIsaRecursively(false/*inherited*/);

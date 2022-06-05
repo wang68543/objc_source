@@ -6,11 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LGPerson.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSObject *obj = [[NSObject alloc] init];
+        LGPerson *obj = [[LGPerson alloc] init];
         NSLog(@"Hello, World!");
     }
     return 0;
