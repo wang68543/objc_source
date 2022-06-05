@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LGPerson.h"
+//https://juejin.cn/post/7068539803318353928
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
