@@ -14,10 +14,42 @@
             filePath = "runtime/objc-runtime-new.mm"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3639"
-            endingLineNumber = "3639"
+            startingLineNumber = "3637"
+            endingLineNumber = "3637"
             landmarkName = "_read_images(hList, hCount, totalClasses, unoptimizedTotalClasses)"
             landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "CD682187-69CF-482E-A8E5-3F5848DA2308 - 49d545b8c94d6b43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_read_images"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangqiang/Documents/Learn/objc_source/objc/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3637"
+                  endingLineNumber = "3637"
+                  offsetFromSymbolStart = "1359">
+               </Location>
+               <Location
+                  uuid = "CD682187-69CF-482E-A8E5-3F5848DA2308 - 49d545b8c94d6b43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_read_images"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangqiang/Documents/Learn/objc_source/objc/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3637"
+                  endingLineNumber = "3637"
+                  offsetFromSymbolStart = "1382">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,10 +62,42 @@
             filePath = "runtime/objc-runtime-new.mm"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7865"
-            endingLineNumber = "7865"
+            startingLineNumber = "7863"
+            endingLineNumber = "7863"
             landmarkName = "objc_readClassPair(bits, info)"
             landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "9CDA86D8-F0C4-465B-82DA-DFEF0666F8AC - 1bf687cee2e987b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_readClassPair"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangqiang/Documents/Learn/objc_source/objc/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7865"
+                  endingLineNumber = "7865"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "9CDA86D8-F0C4-465B-82DA-DFEF0666F8AC - 1bf687cee2e98674"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_readClassPair"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangqiang/Documents/Learn/objc_source/objc/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7863"
+                  endingLineNumber = "7863"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,10 +126,42 @@
             filePath = "runtime/objc-runtime-new.mm"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7652"
-            endingLineNumber = "7652"
+            startingLineNumber = "7650"
+            endingLineNumber = "7650"
             landmarkName = "objc_initializeClassPair_internal(superclass, name, cls, meta)"
             landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "F278BF3B-2C57-4E35-BF72-34EB14A5E2AE - b5e9a19130831650"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_initializeClassPair_internal(objc_class*, char const*, objc_class*, objc_class*)"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangqiang/Documents/Learn/objc_source/objc/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7651"
+                  endingLineNumber = "7651"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "F278BF3B-2C57-4E35-BF72-34EB14A5E2AE - b5e9a1913083167f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_initializeClassPair_internal(objc_class*, char const*, objc_class*, objc_class*)"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangqiang/Documents/Learn/objc_source/objc/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7650"
+                  endingLineNumber = "7650"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -87,16 +183,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6F7B7F97-90D9-417B-8839-E625DD443122"
+            uuid = "4E2ABD69-B11D-4B0D-B896-62958DEC99C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3777"
+            endingLineNumber = "3777"
+            landmarkName = "_read_images(hList, hCount, totalClasses, unoptimizedTotalClasses)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "4E2ABD69-B11D-4B0D-B896-62958DEC99C7 - 49d545b8c94d795f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_read_images"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangqiang/Documents/Learn/objc_source/objc/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3777"
+                  endingLineNumber = "3777"
+                  offsetFromSymbolStart = "3166">
+               </Location>
+               <Location
+                  uuid = "4E2ABD69-B11D-4B0D-B896-62958DEC99C7 - 49d545b8c94d795f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_read_images"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangqiang/Documents/Learn/objc_source/objc/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3777"
+                  endingLineNumber = "3777"
+                  offsetFromSymbolStart = "3212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF083CA6-FF6E-48F6-86F0-08FDF37DCBD3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-os.mm"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "598"
-            endingLineNumber = "598"
-            landmarkName = "map_images_nolock(mhCount, mhPaths, mhdrs)"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "_objc_init_image(image, sects)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "690AD1D3-EA0D-4F31-9B8C-7107D640F4FA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-references.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "_object_set_associative_reference(object, key, value, policy)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1295C571-8DFB-4296-A967-FD461AD3551D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-references.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "_object_set_associative_reference(object, key, value, policy)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BBA4C13-A23F-4821-AB79-99BA577A3AB9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-references.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "_object_set_associative_reference(object, key, value, policy)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

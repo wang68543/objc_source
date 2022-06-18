@@ -3630,16 +3630,14 @@ void _read_images(header_info **hList, uint32_t hCount, int totalClasses, int un
         bool headerIsPreoptimized = hi->hasPreoptimizedClasses();
 
         for (i = 0; i < count; i++) {
-            Class cls = (Class)classlist[i];
-            auto ro = (const class_ro_t *)cls->data();
-            
+            Class cls = (Class)classlist[i]; 
             const char *mangledName = cls->nonlazyMangledName();
             const char *personName = "LGPerson";
             if (strcmp(mangledName, personName) == 0 ) {
                 printf("%s  --KC-- %s\n",__func__, mangledName);
 //                printf("---%s\n", *(ro->baseMethods));
             }
-           
+            auto ro = (const class_ro_t *)cls->data();
             Class newCls = readClass(cls, headerIsBundle, headerIsPreoptimized);
             
             if (newCls != cls  &&  newCls) {
