@@ -6,12 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LGPerson.h"
+#import "LGTeacher.h"
+//clang -rewrite-objc LGPerson.m
 //https://juejin.cn/post/7068539803318353928
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        LGPerson *obj = [[LGPerson alloc] init];
+        LGTeacher *obj = [[LGTeacher alloc] init];
         NSLog(@"Hello, World!");
     }
     return 0;
