@@ -5,16 +5,16 @@
 //  Created by 王强 on 2022/6/4.
 //
 
-#import <Foundation/Foundation.h>
-#import "LGPerson.h"
-#import "LGPerson+LG.h""
+#import <Foundation/Foundation.h> 
+#import "LGTeacher.h"
+//clang -rewrite-objc LGPerson.m
 //https://juejin.cn/post/7068539803318353928
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        LGPerson *obj = [LGPerson alloc];
-        obj.cat_name = @"KC";
-        NSLog(@"Hello, World!");
+        LGTeacher *obj = [[LGTeacher alloc] init];
+        [obj say1];
+        NSLog(@"Hello, World!%@", obj);
     }
     return 0;
 }

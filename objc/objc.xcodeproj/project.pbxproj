@@ -49,6 +49,7 @@
 		39ABD72412F0B61800D1054C /* objc-weak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39ABD72012F0B61800D1054C /* objc-weak.mm */; };
 		5E5038B0284B85A600B66C92 /* LGPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5038AF284B85A600B66C92 /* LGPerson.m */; };
 		5E7E4D4B2855A11600E281AC /* LGPerson+LG.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7E4D4A2855A11600E281AC /* LGPerson+LG.m */; };
+		5E84CC1C285DC2A0006590FF /* LGTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CC1B285DC2A0006590FF /* LGTeacher.m */; };
 		5EF15103284B020A00C1F12B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF15102284B020A00C1F12B /* main.m */; };
 		5EF15107284B024C00C1F12B /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; platformFilter = ios; };
 		5EF15108284B024C00C1F12B /* libobjc.A.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -242,9 +243,11 @@
 		39ABD71F12F0B61800D1054C /* objc-weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-weak.h"; path = "runtime/objc-weak.h"; sourceTree = "<group>"; };
 		39ABD72012F0B61800D1054C /* objc-weak.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-weak.mm"; path = "runtime/objc-weak.mm"; sourceTree = "<group>"; };
 		5E5038AE284B85A600B66C92 /* LGPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPerson.h; sourceTree = "<group>"; };
-		5E5038AF284B85A600B66C92 /* LGPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPerson.m; sourceTree = "<group>"; };
+		5E5038AF284B85A600B66C92 /* LGPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPerson.m; sourceTree = "<group>"; };、
 		5E7E4D492855A11600E281AC /* LGPerson+LG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LGPerson+LG.h"; sourceTree = "<group>"; };
 		5E7E4D4A2855A11600E281AC /* LGPerson+LG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LGPerson+LG.m"; sourceTree = "<group>"; };
+		5E84CC1A285DC2A0006590FF /* LGTeacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGTeacher.h; sourceTree = "<group>"; };
+		5E84CC1B285DC2A0006590FF /* LGTeacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGTeacher.m; sourceTree = "<group>"; };
 		5EF15100284B020A00C1F12B /* debug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = debug; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF15102284B020A00C1F12B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E1475E521DFDB1A001357EA /* llvm-AlignOf.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; name = "llvm-AlignOf.h"; path = "runtime/llvm-AlignOf.h"; sourceTree = "<group>"; tabWidth = 2; };
@@ -496,6 +499,8 @@
 				5E5038AF284B85A600B66C92 /* LGPerson.m */,
 				5E7E4D492855A11600E281AC /* LGPerson+LG.h */,
 				5E7E4D4A2855A11600E281AC /* LGPerson+LG.m */,
+				5E84CC1A285DC2A0006590FF /* LGTeacher.h */,
+				5E84CC1B285DC2A0006590FF /* LGTeacher.m */,
 			);
 			path = debug;
 			sourceTree = "<group>";
@@ -896,6 +901,7 @@
 			files = (
 				5EF15103284B020A00C1F12B /* main.m in Sources */,
 				5E7E4D4B2855A11600E281AC /* LGPerson+LG.m in Sources */,
+				5E84CC1C285DC2A0006590FF /* LGTeacher.m in Sources */,
 				5E5038B0284B85A600B66C92 /* LGPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
